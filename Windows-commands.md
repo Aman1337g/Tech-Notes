@@ -83,9 +83,7 @@
 
 - ```route print``` - shows the routes your computer will take to get to certain networks 
 
-- ```route add 192.168.40.0 mask 255.255.255.0 10.7.1.44``` - allows us to customize the way our computer reaches certain networks.
-
-Above command means we are trying to get to 192.168.40.0 network through 10.7.1.44 gateway
+- ```route add 192.168.40.0 mask 255.255.255.0 10.7.1.44``` - allows us to customize the way our computer reaches certain networks.Above command means we are trying to get to 192.168.40.0 network through 10.7.1.44 gateway
 
 - ```route delete 192.168.40.0``` - deletes this route
 
