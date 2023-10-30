@@ -4,7 +4,7 @@
 - ```ipconfig /all``` - all information about computer's network configuration
 - ```ipconfig /all | findstr DNS``` - to filter out the content in ip configuration [like Here, DNS]
 
-### To change your ip address
+## To change your ip address
 
 **First release it**
 - ```ipconfig /release``` - releases IP.
@@ -30,7 +30,7 @@
 - ```powercfg /batteryreport``` - to get your battery report
 - ```assoc``` - tells which file types are associated with which programs, to change to default program for a file type - ```assoc mp4=VLC.vlc```
 
-### Scanning
+## Scanning
 
 - ```chkdsk /f``` - it will go through your disk and checks if there are any errors
 
@@ -60,7 +60,7 @@
 
 - ```netsh interface ip show dnsservers``` - shows all dnsservers
 
-### Windows Firewall 
+## Windows Firewall 
 - ```netsh advfirewall set allprofiles state off``` - to turn off windows firewall 
 
 - ```netsh advfirewall set allprofiles state on``` - to turn back on windows firewall
