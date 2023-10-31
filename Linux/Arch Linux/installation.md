@@ -298,3 +298,5 @@ then , go to settings>region & language : then select your preferred language af
    pacman -S lightdm lightdm-gtk-greeter
    systemctl enable lightdm
    reboot
+
+
