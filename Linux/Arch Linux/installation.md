@@ -199,7 +199,7 @@ so that openssh runs at system startup so you don't have to start it manually to
 
 ### Adding lvm support (Needed regardless of the method you used in setting up your hard-disk)
 
-`pacman -S lvm2`</br
+`pacman -S lvm2`</br>
 `nano /etc/mkinitcpio.conf` : In order to ensure our boot process supports our configurations </br>
 Scroll over first uncommented line starting with HOOKS : include encrypt if you have used encrpytion otherwise not write it</br>
 HOOKS=(base udev autodetect modconf block encrypt lvm2 filesystems keyboard fsck) </br>
