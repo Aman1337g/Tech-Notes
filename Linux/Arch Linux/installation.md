@@ -200,27 +200,28 @@ so that openssh runs at system startup so you don't have to start it manually to
 ### Adding lvm support (Needed regardless of the method you used in setting up your hard-disk)
 
 `pacman -S lvm2`</br
-`nano /etc/mkinitcpio.conf` : In order to ensure our boot process supports our configurations </br
-Scroll over first uncommented line starting with HOOKS : include encrypt if you have used encrpytion otherwise not write it</br
-HOOKS=(base udev autodetect modconf block encrypt lvm2 filesystems keyboard fsck) </br
+`nano /etc/mkinitcpio.conf` : In order to ensure our boot process supports our configurations </br>
+Scroll over first uncommented line starting with HOOKS : include encrypt if you have used encrpytion otherwise not write it</br>
+HOOKS=(base udev autodetect modconf block encrypt lvm2 filesystems keyboard fsck) </br>
 Now save that file : Ctrl+s Ctrl+x
 
-For those effects to take place</br
-`mkinitcpio -p linux`</br
-`mkinitcpio -p linux-lts` (as we have installed both linux and linux-lts kernel)</br
-`nano /etc/locale.gen` : uncomment according to your location eg - en_US.UTF-8 UTF-8</br
-save the file Ctrl+s Ctrl+x</br
-`locale-gen`</br
-`passwd` : to set a password for root user account (make sure it's a really good one)</brgrub-install --target=i386-pc --recheck /dev/sda
-grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck
-ls -l /boot/grub
-mkdir /boot/grub/locale
-cp /usr/share/locale/en\@quot/LC_MESSAGES/grub.mo /boot/grub/locale/en.mo
-`useradd -m -g users -G wheel <your_user>` : to create a standard user</br
-`passwd <your_user>`</br
-`pacman -S sudo` : checking if sudo package is installed on system OR which sudo (if installed we will get output otherwise no-output)</br
-`EDITOR=nano visudo` : associating wheel group with sudo</br
-uncomment line containing %wheel ALL=(ALL) ALL</br
+For those effects to take place</br>
+`mkinitcpio -p linux`</br>
+`mkinitcpio -p linux-lts` (as we have installed both linux and linux-lts kernel)</br>
+`nano /etc/locale.gen` : uncomment according to your location eg - en_US.UTF-8 UTF-8</br>
+save the file Ctrl+s Ctrl+x</br>
+`locale-gen`</br>
+`passwd` : to set a password for root user account (make sure it's a really good one)</br>
+`grub-install --target=i386-pc --recheck /dev/sda`</br>
+`grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck`</br>
+`ls -l /boot/grub`</br>
+`mkdir /boot/grub/locale`</br>
+`cp /usr/share/locale/en\@quot/LC_MESSAGES/grub.mo /boot/grub/locale/en.mo`</br>
+`useradd -m -g users -G wheel <your_user>` : to create a standard user</br>
+`passwd <your_user>`</br>
+`pacman -S sudo` : checking if sudo package is installed on system OR which sudo (if installed we will get output otherwise no-output)</br>
+`EDITOR=nano visudo` : associating wheel group with sudo</br>
+uncomment line containing %wheel ALL=(ALL) ALL</br>
 press Ctrl+o, enter to save file, Ctrl+x to exit the file
 
 ### Installing GRUB - to make system bootable and independable from bootable media
