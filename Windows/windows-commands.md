@@ -90,4 +90,5 @@
 
 - ```shutdown -s``` - it will shutdown your computer
 
-- ```shutdown /r /fw /f /t 0``` - restarts your computer to system BIOS 
+- ```shutdown /r /fw /f /t 0``` - restarts your computer to system BIOS
+  
