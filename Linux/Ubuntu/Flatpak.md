@@ -1,11 +1,17 @@
 # Table of Contents
 
-[1. Introduction](#introduction)<br/>
-[2. Installation](#installation)<br/>
-[3. Uninstallation](#unistallation)<br/>
-[4. Summary](#summary)
+1. [Introduction](#introduction)<br/>
+2. [Installation](#installation)<br/>
+3. [Uninstallation](#unistallation)<br/>
+4. [Summary](#summary)
+
+<br>
 
 ## Introduction
+
+Flatpak, formerly known as xdg-app, is a utility for software deployment and package management for Linux. It is advertised as offering a sandbox environment in which users can run application software in isolation from the rest of the system.
+
+<br/>
 
 ## Installation
 
@@ -117,6 +123,8 @@ You can even remove the Flatpak daemon, though it’s not recommended in some Li
 ```bash
 sudo apt remove --autoremove flatpak
 ```
+
+<br/>
 
 ## Summary
 
