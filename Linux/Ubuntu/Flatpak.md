@@ -69,7 +69,7 @@ flatpak list --app
 ```
 Then you can paste an **app ID** after `flatpak uninstall` command to remove it. For example, the command in the picture will remove “Brave Browser” from my system.
 
-![unistall-image](./images/app-list.png)
+![uninstall-image](./images/app-list.png)
 
 ### a. Purge personal app data
 
