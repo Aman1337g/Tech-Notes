@@ -5,6 +5,8 @@ There are two recommended ways of installing Docker on Ubuntu:
 - **Installing Docker from Ubuntu's repository**: Easy, single line command but gives a little old version
 - **Using Docker's official repository**: Slightly more work but gives the most recent stable release
 
+<br />
+
 ## **Method 1: Install Docker using Ubuntu's repository**
 
 If you don't care about having a little older version and don't want to get into setting and managing repositories, then this is the best method for you.
@@ -27,9 +29,12 @@ Once you are done with the installation, you can check the installed version usi
 docker -v
 ```
 
+<br/>
+
 ## **Method 2: Install the latest stable version of Docker in Ubuntu**
 
 If you want the most recent stable version of Docker, then you can install Docker from their official repository.
+
 
 ### **Step 1: Remove any existing Docker packages**
 
@@ -39,6 +44,7 @@ To uninstall the old Docker installation, use the following command.
 ```bash
 sudo apt remove docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc
 ```
+
 ### **Step 2: Install dependencies**
 
 The first step is to install some essential packages which will be used to install Docker later in this tutorial:
@@ -46,6 +52,7 @@ The first step is to install some essential packages which will be used to insta
 sudo apt install ca-certificates curl gnupg lsb-release
 ```
 You may already have some or all of these packages installed but no harm in ensuring that. The above command won't harm you.
+
 
 ### **Step 3: Add GPG key of Docker repository and add it to sources.list**
 
@@ -71,7 +78,9 @@ echo \
 
 That's it!
 
+
 ### **Step 4: Installing Docker and Docker Compose**
+
 Now, to take effect from the changes you've made to the system, update the system repository:
 ```bash
 sudo apt update
@@ -91,6 +100,9 @@ docker -v
 
 ![docker version image](./images/docker-v.png)
 
+
+<br/>
+
 ## **Use a hello-world image to verify the Docker installation**
 
 Running a Hello World program is a standard practice that we all follow to kick-start any programming journey and the same goes for Docker.
@@ -108,6 +120,8 @@ Some users may get an error while executing the above command saying "Cannot con
 docker: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
 ```
 In that case, reboot your system and try again to install the Docker Hello World image and it'll work just fine.
+
+<br/>
 
 ## **💡Bonus Tip: Use docker without sudo in Ubuntu**
 
