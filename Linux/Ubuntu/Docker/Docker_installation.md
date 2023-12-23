@@ -98,7 +98,7 @@ To check the installed version, use the following command:
 docker -v
 ```
 
-![docker version image](./images/docker-v.png)
+![docker version image](../images/docker-v.png)
 
 
 <br/>
@@ -113,7 +113,7 @@ To install and run the Hello World image, simply use the following:
 ```bash
 sudo docker run hello-world
 ```
-![Run hello world docker image in Ubuntu](./images/hello-world-docker.png)
+![Run hello world docker image in Ubuntu](../images/hello-world-docker.png)
 
 Some users may get an error while executing the above command saying "Cannot connect to the Docker daemon":
 ```bash
@@ -129,7 +129,7 @@ If you noticed, I used sudo to pull the docker image which is not the most conve
 
 If you try to use Docker without sudo, it will give you an error:
 
-![Docker sudo error in Ubuntu](./images/hello-world-error.png)
+![Docker sudo error in Ubuntu](../images/hello-world-error.png)
 
 Well, in this section, I will show you how you can use Docker without sudo.
 
@@ -151,5 +151,5 @@ Now, log out and log back in to take effect from the changes. But if you are usi
 
 That's it! From now on, you can use the docker commands without sudo like I did to run the Docker Hello World image:
 
-![Use docker without sudo in Ubuntu](./images/wo-sudo-hello-world.png)
+![Use docker without sudo in Ubuntu](../images/wo-sudo-hello-world.png)
 There you go.
