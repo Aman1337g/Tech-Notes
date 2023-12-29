@@ -12,6 +12,7 @@ I go with the minimal installation of ubuntu with thirty party hardware option c
 6. [Disabling unnecessary services](#6-disabling-unecessary-services-to-me)
 7. [Firewall Setup](#7-firewall-setup)
 8. [Most Imp. Theming](#8-theming-your-awesome-system)
+9. [Installing **qemu** VM](#9-installing-qemu-vm)
 
 <br>
 
@@ -176,3 +177,28 @@ sudo ufw enable
 - papirus icons - https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 
 For themes to be applied on flatpaks as well, refer to [here](https://itsfoss.com/flatpak-app-apply-theme/)
+
+<br>
+
+## 9. Installing **qemu** VM
+
+- To check whether your system support virtualisation - type in terminal - `lscpu`
+    - look at the virtualisation field - for AMD processors it should be `AMD-V`
+    - for intel processors it should be - `VT-x`
+- Checking if your system is ready for handling VM - `egrep -c '(vmx|svm)' /proc/cpuinfo`
+    - if > 0 , Hooray! 🎉 your system is ready to handle VM
+
+Now, it's time to install qemu VM
+
+```bash
+sudo apt update
+sudo apt install qemu-kvm virt-manager bridge-utils
+
+# Now reboot your system (libvirtd.service will be now enabled)
+sudo reboot now
+
+sudo useradd -g $USER libvirt
+sudo useradd -g $USER libvirt-kvm
+```
+
+Now, you are ready to experience the world of different OS.
