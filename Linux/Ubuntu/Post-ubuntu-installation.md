@@ -5,7 +5,7 @@ I go with the minimal installation of ubuntu with thirty party hardware option c
 ## Contents
 
 1. [Removing snap completely](#1-removing-snap-completely)
-2. [Getting rid of reporting](#2-uninstalling-reporting-services#)
+2. [Getting rid of reporting](#2-uninstalling-reporting-services)
 3. [Uninstalling bloatware](#3-uninstalling-applications-preinstalled)
 4. [Enabling flatpak support](#4-enabling-flatpak-support)
 5. [Installing Applications](#5-installing-applications)
@@ -92,6 +92,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 
 - installing free download manager from https://www.freedownloadmanager.org/ as .deb
 - go to download folder `sudo dpkg -i ./fdm.deb` then `sudo apt install -f` then again `sudo dpkg -i ./fdm.deb`
+- to fix the keyring error after running `sudo apt update`, go [here](https://itsfoss.com/key-is-stored-in-legacy-trusted-gpg/)
 
 - installing vscode - https://code.visualstudio.com/docs/setup/linux
 - installing java - https://www.freecodecamp.org/news/how-to-install-java-in-ubuntu/
