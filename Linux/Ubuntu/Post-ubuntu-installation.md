@@ -100,6 +100,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 - installing nextdns using - https://github.com/nextdns/nextdns/wiki/Debian-Based-Distribution
 - installing tlp - https://linrunner.de/tlp/installation/ubuntu.html
 - installing git - https://git-scm.com/download/linux
+- installing [docker](https://github.com/Aman1337g/Tech-Notes/blob/main/Linux/Ubuntu/Docker/Docker_installation.md)
 
 For git cheatsheet go [here](https://github.com/aman1337g/git-cheatsheet) and setting up multiple accounts go [here](https://github.com/aman1337g/git-cheatsheet#configuring-git-for-a-second-github-account). For increasing productivity refer to these git [aliases](https://github.com/Aman1337g/Git-Cheatsheet#list-of-some-aliases-i-use-myself--edit-using-git-config---global---edit) 
 
